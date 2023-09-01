@@ -1,6 +1,4 @@
 ---
-layout: default
+layout: blogs
 title: Blogs
 ---
-
-# TEST
