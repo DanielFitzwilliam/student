@@ -4,7 +4,8 @@ comments: true
 layout: post
 title: Back to School
 description: My first blog post, with my progress for the first couple of weeks.
-type: plans
+courses: { plans: {week: 1} }
+type: hacks
 ---
 
 # 9/1/23 - Back to School
