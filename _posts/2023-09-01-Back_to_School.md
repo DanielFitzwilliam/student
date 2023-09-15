@@ -6,6 +6,7 @@ title: Back to School
 description: My first blog post, with my progress for the first couple of weeks.
 courses: { plans: {week: 1} }
 type: hacks
+blog: true
 ---
 
 # 9/1/23 - Back to School

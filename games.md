@@ -1,5 +1,5 @@
 ---
-layout: default
-title: default
+layout: games
+title: Games
 ---
 

@@ -1,0 +1,30 @@
+---
+toc: True
+comments: false
+layout: post
+title: Tables and HTML
+description: Working to understand how different coding languages work.
+courses: {'plans': {'week': 3}}
+type: hacks
+blog: true
+---
+
+<html>
+    <!-- inputs -->
+    <form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</html>
+
+<script>
+    
+    //logic
+    let x = 4
+    let y = 5
+
+</script>

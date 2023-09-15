@@ -24,10 +24,10 @@ layout: default
     {% endif %}
   {% endfor %}
 
-  <!-- Hide posts if front matter flag blog:false -->
+  <!-- Hide posts if front matter flag blog:true -->
   {% assign posts = ''|split:'' %}
   {% for post in rawposts %}
-    {% if post.blog != false %}
+    {% if post.blog != true %}
       {% assign posts = posts|push:post%}
     {% endif %}
   {% endfor %}

@@ -6,6 +6,7 @@ title: Tables and HTML
 description: Working to understand how different coding languages work.
 courses: {'plans': {'week': 3}}
 type: hacks
+blog: true
 ---
 
 # 9/8/23 - Tables and HTML
