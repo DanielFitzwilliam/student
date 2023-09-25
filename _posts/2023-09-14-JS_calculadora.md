@@ -4,7 +4,7 @@ comments: false
 layout: post
 title: JS Calculator
 description: Made by me and my group to practice working with JavaScript code.
-courses: {'plans': {'week': 3}}
+courses: {plans: {week: 4}}
 type: hacks
 blog: false
 ---

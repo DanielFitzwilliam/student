@@ -4,7 +4,7 @@ comments: False
 layout: post
 title: Blue Square's Colorful Platforming Adventure
 description: A game I made using Scratch. Enjoy!
-courses: {'plans': {'week': 3}}
+courses: {plans: {week: 3}}
 type: tangibles
 blog: false
 ---

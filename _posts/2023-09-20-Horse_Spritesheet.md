@@ -4,7 +4,7 @@ comments: false
 layout: post
 title: Horse Animation
 description: Made by me and my group to practice working with animation in JavaScript.
-courses: {'plans': {'week': 3}}
+courses: {plans: {week: 5}}
 type: hacks
 blog: false
 ---
@@ -14,11 +14,13 @@ blog: false
         <canvas id="spriteContainer"> <!-- Within the base div is a canvas. An HTML canvas is used only for graphics. It allows the user to access some basic functions related to the image created on the canvas (including animation) -->
             <img id="horseSprite" src="{{site.baseurl}}/images/horse.png">
         </canvas>
-        <div id="controls"> <!--basic radio buttons which can be used to check whether each individual animaiton works -->
+        <div id="controls"> <!--basic radio buttons as well as a range slider which can be used to check whether each individual animaiton works, and set its speed -->
             <input type="radio" name="animation" id="idle" checked>
             <label for="idle">Running</label><br>
             <input type="radio" name="animation" id="barking">
             <label for="barking">Stamping</label><br>
+            <label for="framerate">Frame Rate:</label>
+            <input type="range" name="slider" id="framerate" value="20" min="1" max="60">
         </div>
     </div>
 </body>
@@ -30,7 +32,7 @@ blog: false
         const SPRITE_HEIGHT = 84;
         const SCALE_FACTOR = 4;
         const FRAME_LIMIT = 6;
-        const FRAME_RATE = 20;
+        let frameRate = 20;
         canvas.width = SPRITE_WIDTH * SCALE_FACTOR;
         canvas.height = SPRITE_HEIGHT * SCALE_FACTOR;
         class Horse {
@@ -93,7 +95,7 @@ blog: false
         horse.draw(ctx);
         horse.update();
         requestAnimationFrame(animate);
-    }, 1000 / FRAME_RATE); // Calculate the delay based on desired frame rate
+    }, 1000 / frameRate); // Calculate the delay based on desired frame rate
 }
         animate();
     });

@@ -4,7 +4,7 @@ comments: false
 layout: post
 title: Tables and HTML
 description: Working to understand how different coding languages work.
-courses: {'plans': {'week': 3}}
+courses: {plans: {week: 3}}
 type: hacks
 blog: true
 ---
