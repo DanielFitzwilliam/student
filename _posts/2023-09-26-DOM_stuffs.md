@@ -6,7 +6,7 @@ title: HTML and JavaScript w/ DOM interaction
 description: stuff
 courses: {plans: {week: 5}}
 type: hacks
-blog: false
+hide: true
 ---
 
 <html>
