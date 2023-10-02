@@ -1,5 +1,4 @@
 ---
-layout: games
 title: Games
 ---
 

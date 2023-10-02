@@ -24,14 +24,6 @@ layout: default
     {% endif %}
   {% endfor %}
 
-  <!-- Hide posts if front matter flag blog:false -->
-  {% assign posts = ''|split:'' %}
-  {% for post in rawposts %}
-    {% if post.blog != false %}
-      {% assign posts = posts|push:post%}
-    {% endif %}
-  {% endfor %}
-
   <!-- Sort posts by rank, then date -->
   {% assign grouped_posts = posts | group_by: "sticky_rank" | sort: "name", "last" %}
   {% assign sticky_posts = ''|split:'' %}
