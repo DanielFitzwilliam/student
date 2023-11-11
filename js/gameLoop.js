@@ -1,5 +1,6 @@
 import {leftPaddle, rightPaddle} from "./paddle.js"
 import {drawBg} from "./canvas.js"
+import {ball1} from "./ball.js";
 
 const button = document.getElementById("play");
 button.addEventListener("click", startGameLoop);
@@ -24,6 +25,7 @@ function gameLoop() {
     drawBg();
     leftPaddle.update();
     rightPaddle.update();
+    ball1.update();
     requestAnimationFrame(gameLoop);
     //requestAnimationFrame basically calls game loop every "frame" of the game smoothly without dealing with recursion problems
 };

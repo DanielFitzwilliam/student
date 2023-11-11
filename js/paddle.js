@@ -1,5 +1,6 @@
 import {drawBg} from "./canvas.js"
 
+//Get canvas element
 const canvas = document.getElementById("window");
 const ctx = canvas.getContext("2d");
 
@@ -13,7 +14,6 @@ class Paddle {
         this.moveUpKey = moveUpKey;
         this.moveDownKey = moveDownKey;
         this.keysPressed = {}; //holds all current keys pressed
-        ctx.fillStyle = "white"; //paddle color
         document.addEventListener("keydown", (e) => this.keyDownHandler(e));
         document.addEventListener("keyup", (e) => this.keyUpHandler(e))
     };
@@ -27,6 +27,7 @@ class Paddle {
         this.drawPaddle(this.x, this.y , this.width, this.height)
     };
     drawPaddle(x, y, width, height) { //draws paddle to the screen
+        ctx.fillStyle = "white"; //paddle color
         ctx.fillRect(x, y, width, height);
     };
     keyUpHandler(e) {
