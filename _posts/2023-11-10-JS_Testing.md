@@ -21,9 +21,13 @@ blog: true
     </script>
     </div>
     <div id="radios">
-        <input type="radio" id="Calvin" name="Dogs" value="Calvin" checked>
+        <input type="radio" id="Calvin" name="Dogs" value="Calvin">
         <label for="Calvin">Calvin</label><br>
-        <input type="radio" id="Freckles" name="Dogs" value="Freckles">
+        <input type="radio" id="Freckles" name="Dogs" value="Freckles" checked>
         <label for="Freckles">Freckles</label><br>
+    </div>
+    <div id="button">
+        <input type="button" id="play" name="play" value="Play Game"><br>
+        <script src="/student/js/gameLoop.js" type="module">
     </div>
 </body>

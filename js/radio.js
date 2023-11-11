@@ -1,6 +1,6 @@
 import {drawImage} from "./canvas.js"
 
-let selectedValue = "Calvin"; //defines selectedValue in a wider scope
+let selectedValue = "Freckles"; //defines selectedValue in a wider scope
 
 const Dogs = document.getElementsByName('Dogs');
 Dogs.forEach(button => {
