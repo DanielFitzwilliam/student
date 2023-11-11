@@ -8,33 +8,32 @@ class Paddle {
         this.width = width; //width of the paddle
         this.height = height; //height of the paddle
         this.speed = speed; //speed of movement of the paddle
-        this.yLast = yLast; //y position on screen of the previous frame
+        this.keysPressed = {}; //holds all current keys pressed
         ctx.fillStyle = "white"; //paddle color
-        document.addEventListener("keydown", function(e) {
-            leftPaddle.controls(e);
-        });
+        document.addEventListener("keydown", (e) => this.keyDownHandler(e));
+        document.addEventListener("keyup", (e) => this.keyUpHandler(e))
     };
     update() {
-        this.drawPaddle(this.x, this.y, this.width, this.height, this.yLast);
+        if(this.keysPressed["w"]) {
+            this.y -= this.speed;
+        };
+        if(this.keysPressed["s"]) {
+            this.y += this.speed;
+        };
+        this.drawPaddle(this.x, this.y , this.width, this.height)
     };
-    drawPaddle(x, y, width, height, yLast) { //draws paddle to the screen
-        ctx.clearRect(x, yLast, width, height);
+    drawPaddle(x, y, width, height) { //draws paddle to the screen
+        ctx.clearRect(x, 0 , width, canvas.height);
         ctx.fillRect(x, y, width, height);
     };
-    controls(e) {
-        if(e instanceof KeyboardEvent) {
-            this.yLast = this.y
-            if(e.key === "w") {
-                this.y -= this.speed;
-            };
-            if(e.key === "s") {
-                this.y += this.speed;
-            };
-            this.update();
-        };
+    keyUpHandler(e) {
+        this.keysPressed[e.key] = false;
     };
+    keyDownHandler(e) {
+        this.keysPressed[e.key] = true;
+    }
 };
 
-const leftPaddle = new Paddle (10, 100, 10, 100, 10);
+const leftPaddle = new Paddle (10, 100, 10, 100, 5);
 
 export {leftPaddle}

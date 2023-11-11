@@ -20,9 +20,6 @@ function startGameLoop() {
 };
 
 function gameLoop() {
-        testCounter++;
-        leftPaddle.update();
-        if (testCounter < 1000) {
-            gameLoop();
-        };
+    leftPaddle.update();
+    requestAnimationFrame(gameLoop);
 };
