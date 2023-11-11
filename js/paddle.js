@@ -1,3 +1,5 @@
+import {drawBg} from "./canvas.js"
+
 const canvas = document.getElementById("window");
 const ctx = canvas.getContext("2d");
 
@@ -23,7 +25,6 @@ class Paddle {
         this.drawPaddle(this.x, this.y , this.width, this.height)
     };
     drawPaddle(x, y, width, height) { //draws paddle to the screen
-        ctx.clearRect(x, 0 , width, canvas.height);
         ctx.fillRect(x, y, width, height);
     };
     keyUpHandler(e) {

@@ -1,4 +1,4 @@
-import {drawImage} from "./canvas.js"
+import {drawBg} from "./canvas.js"
 
 let selectedValue = "Freckles"; //defines selectedValue in a wider scope
 
@@ -15,9 +15,7 @@ function returnRadioValue() {
             //selectedValue returns the value of the button that is pressed down
         }
     });
-    console.log("selectedValue");
-    console.log(selectedValue);
-    drawImage(); //draws the new image
+    drawBg(); //draws the new image
 };
 
 export {selectedValue}

@@ -5,7 +5,7 @@ const canvas = document.getElementById("window");
 const ctx = canvas.getContext("2d");
 
 //function to draw image
-function drawImage() {
+function drawBg() {
     const image = new Image();
     if (selectedValue === "Calvin") { //draws the image based on the radio button that is clicked.
         image.src = "/student/images/Calvin.png";
@@ -41,7 +41,6 @@ function drawImage() {
     };
 };
 
-//draws the image
-drawImage();
+drawBg();
 
-export {drawImage}
+export {drawBg}
