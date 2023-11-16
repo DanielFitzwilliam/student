@@ -9,6 +9,8 @@ type: hacks
 blog: true
 ---
 
+TEST
+
 # 9/8/23 - Tables and HTML
 September 8, 2023: This is the second post for my blog for my class Computer Science and Software Engineering 1.
 
