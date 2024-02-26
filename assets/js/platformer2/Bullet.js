@@ -1,5 +1,6 @@
 import Character from './Character.js';
 import GameEnv from './GameEnv.js';
+import GameControl from './GameControl.js';
 
 export class Bullet extends Character {
     constructor (canvas, image, data, xPercentage, yPercentage, name) {
@@ -21,6 +22,14 @@ export class Bullet extends Character {
 
     update() {
         super.update();
+
+        //Random Event 2: Time Stop All Enemies
+        if (GameControl.randomEventId === 2 && GameControl.randomEventState === 1) {
+            this.speed = 0;
+            if (this.name === "goombaSpecial") {
+                GameControl.endRandomEvent();
+            };
+        };
 
         //move the bullet downwards
         this.y += this.speed;

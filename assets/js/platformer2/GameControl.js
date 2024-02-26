@@ -170,7 +170,7 @@ const GameControl = {
         this.randomEventId = Math.floor(Math.random() * 3) + 1; //The number multiplied by Math.random() is the number of possible events.
         /**Random Event Key
          * 1: Inverts the Color of the Background
-         * 2: Time Stops all Goombas
+         * 2: Time Stops all Enemies
          * 3: Kills a Random Goomba
         */
     },

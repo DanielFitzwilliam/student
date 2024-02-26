@@ -39,7 +39,7 @@ export class Goomba extends Character {
             this.speed = -this.speed;
         };
 
-        //Random Event 2: Time Stop All Goombas
+        //Random Event 2: Time Stop All Enemies
         if (GameControl.randomEventId === 2 && GameControl.randomEventState === 1) {
             this.speed = 0;
             if (this.name === "goombaSpecial") {
