@@ -297,6 +297,11 @@ export class Player extends Character {
             }
         } 
 
+        //Bullet collision code
+        if (this.collisionData.touchPoints.other.id === "bullet") {
+            setTimeout(this.goombaCollision.bind(this), 50)
+        } 
+
         // Mushroom collision check
         if (this.collisionData.touchPoints.other.id === "mushroom") {
             this.canvas.style.filter = 'invert(1)';
