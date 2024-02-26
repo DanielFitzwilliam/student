@@ -2,8 +2,8 @@ title: Game Levels MP 2.1
 description: "Jan-Feb 2024"
 owner_name: Nighthawkcoders
 github_username: nighthawkcoders
-github_repo: "game_levels_mp"
-baseurl: "/game_levels_mp"
+github_repo: "student"
+baseurl: "/student"
 future: true
 remote_theme: jekyll/minima
 minima:
